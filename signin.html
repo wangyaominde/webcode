@@ -4,11 +4,36 @@
         <meta charset="UTF-8">
         <title>用户登陆页面</title>
     </head>
+    <style>
+    .login{
+      text-align: center; /*让div内部文字居中*/
+      background-color: #b8b8b8;
+      border-radius: 20px;
+      width: 300px;
+      height: 200px;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .logint{
+      border-radius: 5px;
+    }
+    .butt{
+      border-radius: 5px;
+      width: 50px;
+      height: 50px;
+    }
+    </style>
     <body>
         <form action="signin.php" method="post">
-            <p>用户名:<input type="text" name="name"></p>
-            <p>密  码: <input type="text" name="password"></p>
+          <div class="login">
+            <p>用户名:<input class="logint" type="text" name="name"></p>
+            <p>密  码: <input class="logint" type="text" name="password"></p>
             <p><input type="submit" name="submit" value="登陆"></p>
+          </div>
         </form>
     </body>
 </html>
